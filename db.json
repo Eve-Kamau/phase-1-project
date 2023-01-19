@@ -1,5 +1,26 @@
 {
     "drivers":[
-        
-    ]
-}
+      {
+       "id": "1",
+       "name": "David Kamau",
+       "driving experience": 15,
+       "driver_image": "https://unsplash.com/photos/2EGNqazbAMk",
+       "description": "A great city efficient driver who knows how go around Kanairo fast"
+      },   
+      {
+          "id": "2",
+          "name": "Israel Kiprop",
+          "driving experience": 30,
+          "driver_image": "https://unsplash.com/photos/jC0IQzIm_9Y",
+          "description": "A long-distance tracker"
+      },
+      {
+          "id": "2",
+          "name": "Rashid Abdalla",
+          "driving experience": 18,
+          "driver_image": "https://unsplash.com/photos/C5XyLljkMrY",
+          "description": "A honest, responsible and well-mannered city delivery driver"
+      }
+    ]   
+  }
+  
