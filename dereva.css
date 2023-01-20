@@ -69,8 +69,8 @@ body {
 .driver-list img{
   border-radius: 50%;
   object-fit: cover;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .driver-list .driver-info{

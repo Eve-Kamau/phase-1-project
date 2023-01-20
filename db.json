@@ -5,7 +5,7 @@
      "name": "David Kamau",
      "city": "Nairobi, Kenya",
      "experience": 15,
-     "image_url": "https://unsplash.com/photos/2EGNqazbAMk",
+     "image_url": "./Images/Gent1.jpg",
      "description": "A great city efficient driver who knows how to go around the city fast"
     },   
     {
@@ -13,7 +13,7 @@
         "name": "Israel Kiprop",
         "city": "Eldoret, Kenya",
         "experience": 30,
-        "image_url": "https://unsplash.com/photos/jC0IQzIm_9Y",
+        "image_url": "./Images/Gent 2.jpg",
         "description": "A calm, hard-working long-distance trucker who loves being on the road"
     },
     {
@@ -21,7 +21,7 @@
         "name": "Rashid Abdalla",
         "city": "Mombasa, Kenya",
         "experience": 18,
-        "image_url" : "https://unsplash.com/photos/C5XyLljkMrY",
+        "image_url": "./Images/Gent 3.jpg",
         "description": "A honest, responsible and well-mannered city delivery driver who delivers cargo on-time"
     }
   ]   

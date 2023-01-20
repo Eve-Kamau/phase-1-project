@@ -1,30 +1,56 @@
 const url_API = 'https://my-json-server.typicode.com/Eve-Kamau/phase-1-project/drivers';
+const result = document.getElementById('result')
+const filter =  document.getElementById('filter')
+const listItems = []
 
 getDriverData();
 
+//Check Input, Fire Event
+filter.addEventListener('input', (e) => filterData (e.target.value));
+    
+//Upload Driver Data from API
 function getDriverData() {
     fetch(url_API)
     .then(response => response.json())
     .then(data => {
         console.log(data);
 
-    data.innerHTML = ''
+    //Clear result 
+    result.innerHTML = ''
+
     data.forEach(driver => {
         console.log(driver);
-    const li = document.createElement('li')
 
+    //Fill data to result
+    const li = document.createElement('li')
+   
     listItems.push(li)
 
     li.innerHTML = `
-    <img src="${driver.driver_image}" alt="${driver.name}"
+    <img src="${driver.driver_image}" alt=" "
     <div class ="driver-info">
-        <h4>"${driver.name}"</h4>
-        <p>${driver.driving_experience}, ${driver.description}, ${driver.city}</p>
-        `
+        <h4> ${driver.name}</h4>
+        <p> EXP: ${driver.experience} </p>
+        <p>${driver.city} </p>
+    </div> 
+    `
+    result.appendChild(li)
     })
 })
 .catch((error) =>  {
     console.log('Driver Not Available!')
     })
-
 }
+
+function filterData(searchTerm) {
+    listItems.forEach(item => {
+        if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())){
+            item.classList.remove('hide')
+        }else {
+            item.classList.add('hide')
+        }
+        })
+    }
+
+//  //<p>${driver.description}</p>
+//Experience: ${driver.experience}
