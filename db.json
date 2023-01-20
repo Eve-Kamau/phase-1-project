@@ -1,24 +1,27 @@
 {
-  "drivers":[
+  "driver":[
     {
-     "id": "1",
+     "id": 1,
      "name": "David Kamau",
-     "driving_experience": 15,
-     "driver_image": "https://unsplash.com/photos/2EGNqazbAMk",
-     "description": "A great city efficient driver who knows how to go around Kanairo fast"
+     "city": "Nairobi, Kenya",
+     "experience": 15,
+     "image_url": "https://unsplash.com/photos/2EGNqazbAMk",
+     "description": "A great city efficient driver who knows how to go around the city fast"
     },   
     {
-        "id": "2",
+        "id": 2,
         "name": "Israel Kiprop",
-        "driving_experience": 30,
-        "driver_image": "https://unsplash.com/photos/jC0IQzIm_9Y",
+        "city": "Eldoret, Kenya",
+        "experience": 30,
+        "image_url": "https://unsplash.com/photos/jC0IQzIm_9Y",
         "description": "A calm, hard-working long-distance trucker who loves being on the road"
     },
     {
-        "id": "2",
+        "id": 3,
         "name": "Rashid Abdalla",
-        "driving_experience": 18,
-        "driver_image": "https://unsplash.com/photos/C5XyLljkMrY",
+        "city": "Mombasa, Kenya",
+        "experience": 18,
+        "image_url" : "https://unsplash.com/photos/C5XyLljkMrY",
         "description": "A honest, responsible and well-mannered city delivery driver who delivers cargo on-time"
     }
   ]   
