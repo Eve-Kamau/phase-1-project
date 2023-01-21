@@ -25,15 +25,16 @@ function getDriverData() {
 
     //Fill data to result
     const li = document.createElement('li')
-   
+  
     listItems.push(li)
 
     li.innerHTML = `
-    <img src= ${driver.image_url} alt="Driver Image" title= "Dereva">
-    <div class ="driver-info">
-        <h4> ${driver.name}</h4>
-        <p> EXP: ${driver.experience} </p>
-        <p>${driver.city} </p>
+    <img src= ${driver.image_url} alt= "Driver Image" title= "Dereva">
+    <div class = "driver-info">
+        <h3> ${driver.name} </h3>
+        <p> ${driver.city} </p>
+        <p> Drive Exp: ${driver.experience} </p>
+        <p><em>    ${driver.description} </p>
     </div> 
     `
     result.appendChild(li)
@@ -53,6 +54,3 @@ function filterData(searchTerm) {
         }
         })
     }
-
-//  //<p>${driver.description}</p>
-//Experience: ${driver.experience}

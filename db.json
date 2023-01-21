@@ -1,6 +1,5 @@
 {
   "drivers":[
-    
     {
      "id": 1,
      "name": "David Kamau",
@@ -14,7 +13,7 @@
         "name": "Israel Kiprop",
         "city": "Eldoret, Kenya",
         "experience": 30,
-        "image_url": "https://images.unsplash.com/photo-1614890085618-0e1054da74f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        "image_url": "https://images.unsplash.com/photo-1504199367641-aba8151af406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
         "description": "A calm, hard-working long-distance trucker who loves being on the road"
     },
     {
