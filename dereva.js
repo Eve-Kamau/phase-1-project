@@ -29,7 +29,7 @@ function getDriverData() {
     listItems.push(li)
 
     li.innerHTML = `
-    <img src= ${driver.image_url} alt="Driver Image" title ="Dereva">
+    <img src= ${driver.image_url} alt="Driver Image" title= "Dereva">
     <div class ="driver-info">
         <h4> ${driver.name}</h4>
         <p> EXP: ${driver.experience} </p>
