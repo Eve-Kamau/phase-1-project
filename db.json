@@ -2,7 +2,7 @@
   "drivers":[
     {
      "id": 1,
-     "type": "Mini-Bus Driver",
+     "drivertype": "Mini-Bus Driver",
      "city": "Nairobi, Kenya",
      "jobtype": "Daily, Part-Time, Full Time",
      "image_url": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
@@ -11,25 +11,25 @@
     },   
     {
       "id": 2,
-      "name": "Executive Saloon Driver",
+      "drivertype": "Executive Saloon Driver",
       "city": "Nairobi, Kenya",
       "jobtype": "Full Time",
-      "image_url": "https://images.unsplash.com/photo-1504199367641-aba8151af406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      "image_url": "https://images.unsplash.com/photo-1591710635498-283fe28f75e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2068&q=80",
       "rate":"Ksh 800/hour",
       "description": "A time-efficient,clean and well-mannered driver who knows how to go around the city fast"
     },
     {
       "id": 3,
-      "name": "HCV Lorry Driver",
+      "drivertype": "HCV Lorry Driver",
       "city": "Mombasa, Kenya",
       "jobtype": "Part Time, Full Time",
-      "image_url": "https://images.unsplash.com/photo-1591710635498-283fe28f75e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2068&q=80",
+      "image_url": "https://images.unsplash.com/photo-1504199367641-aba8151af406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
       "rate":"Ksh 1,500/hour",
       "description": "A calm, hard-working long-distance trucker who loves being on the road"
     },
     {
       "id": 4,
-      "type": "TaxiCab / Courier Driver",
+      "drivertype": "TaxiCab / Courier Driver",
       "city": "Nakuru, Kenya",
       "jobtype": "Daily, Part-Time",
       "image_url": "https://images.unsplash.com/photo-1530785602389-07594beb8b73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=800",
