@@ -3,10 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
 *{
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navigation ul{
   display: flex;
   list-style: none;
@@ -17,7 +27,6 @@
   color: greenyellow;
   font-family: "Dosis", sans-serif;
   font-size: 25px;
-  
 }
 
 .bg{
@@ -42,8 +51,8 @@ header{
 .container{
   border-radius:2px;
   /*border: 5px white;*/
-  width: 150px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   /*flex-direction:column;*/
   margin: 5px;
   position:relative;
@@ -56,7 +65,7 @@ header{
   display: flex;
   justify-content: center;
   flex-grow: 2;
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Montserrat", sans-serif;
   color: aliceblue;
   text-align: center;
@@ -79,6 +88,7 @@ h1{
   font-size: 20px;
   font-weight: bolder;
 }
+
 h4{
   font-family: "Dosis", sans-serif;
   color:greenyellow; 
@@ -86,13 +96,46 @@ h4{
   font-weight: bolder;
 }
 
-#review-list li {
-  position: fixed;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 20px;
+.feedback {
+  margin-top: 400px;
+  margin-left: 550px;
+  margin-bottom: 30px;
+  height: 40vh;
+  width: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-color:greenyellow;
+  padding: 0 50px;
+  color:black;
 }
 
+.feedback h2,h5 {
+  text-align:left;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.feedback input {
+  height: 5vh;
+  width: 84vh;
+  text-align:left;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.feedback textarea {
+  height: 10vh;
+  width: 84vh;
+  text-align:left;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+p{
+  color:black;
+}
 footer{
   position: fixed;
   bottom: 0;

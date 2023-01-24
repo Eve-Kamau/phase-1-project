@@ -1,9 +1,10 @@
 const url_API = 'https://my-json-server.typicode.com/Eve-Kamau/phase-1-project/drivers';
 const container = document.querySelector('.container');
+//const post= document.getElementById("feedback");
 //const listItems = [];
 
 document.addEventListener('DOMContentLoaded',() => {
-    getDriverData()
+    getDriverData();
 })
 
 //Upload Driver Data from API
@@ -12,8 +13,13 @@ function getDriverData() {
     .then(response => response.json())
     .then(data => {
       console.log(data)
-showDrivers(data)
-  });
+      showDrivers(data)
+    })
+    .catch(error =>  {
+     console.log('Error!');
+     })
+     }
+
 
 function showDrivers(data){
 data.forEach(driver => {
@@ -37,7 +43,7 @@ data.forEach(driver => {
   description.innerHTML =`${driver.description}`
   rate.innerHTML = `Rate:  ${driver.rate}`
 
-  like.textContent = 'like'
+  like.textContent = 'VIEW MORE'
   view.textContent = 'BOOK DRIVER'
 
   div.appendChild(image)
@@ -49,35 +55,20 @@ data.forEach(driver => {
   div.appendChild(view)
   container.appendChild(div)
 })
-.catch((error) =>  {
-console.log('Driver Not Available!')
-});
 }
+
+//Add Review
+document.getElementById('subbtn').addEventListener('click', function(e) {
+  addComment(e)
+})
+
+function addComment(e){
+//e.preventDefault()
+let data = null
+let name = document.getElementById("userName")
+let email = document.getElementById("userEmail")
+let comment = document.getElementById("userComment")
+data = "Name : " + name.value + "<br/>Email : "+email.value+ "<br/> Review : "+comment.value
+console.log(data);
+document.getElementById("data").innerHTML =  data
 }
-   /*   
-    data.forEach((driver) => {
-    container.innerHTML += `
-    <div id="cards" class="boxes">
-      <div class="box-content">
-        <h2>${driver.type}</h2>
-        <p>
-          ${driver.description}
-        </p>
-        <a class="showmore" href="#">VIEW</a>
-      </div>
-    </div>`
-   
-    var bgimg = document.getElementById(`cards${i}`);
-    bgimg.style.backgroundImage = `url('img/${driver.image_url}.jpg')`
-    }
-)
-})*/
-
-
-/*  
-//data.forEach(driver => {
-    //const li = document.createElement('li')
-    //listItems.push(li)
-     //container.innerHTML
-*/
- //result.appendChild(li)
